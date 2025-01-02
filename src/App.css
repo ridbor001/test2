@@ -1,0 +1,90 @@
+/* App.css */
+
+/* 整体容器 */
+.app-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 标题样式 */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* 主内容区域，Flexbox 布局 */
+.main-content {
+  display: flex;
+  gap: 10px; /* 减少组件之间的间隔 */
+  align-items: flex-start; /* 上对齐 */
+  justify-content: center; /* 居中对齐 */
+}
+
+/* 地图容器 */
+.map-container {
+
+  flex: 0 0 700px; /* 固定宽度 */
+  height: 800px; /* 固定高度 */
+  overflow: hidden; /* 防止显示超出的部分 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 右侧容器 */
+.right-container {
+  flex: 0 0 300px; /* 固定宽度 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* 减少组件之间的间隔 */
+}
+
+/* 查询部分 */
+.path-finder-container {
+  flex: 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 列表部分，支持上下滚动 */
+.place-list-container {
+  flex: 1;
+  max-height: 400px; /* 高度可以根据需要调整 */
+  overflow-y: auto; /* 允许垂直滚动 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 搜索框样式 */
+.place-list-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* 场所列表项样式 */
+.place-list-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.place-list-container li {
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
